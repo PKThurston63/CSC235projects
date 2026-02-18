@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviewing with W3School Tutorial</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+
+         body {
+            background-color: rgb(176, 228, 230);
+        }
+        h1 {
+            color:red
+        }
+        .p1 {
+            font-family: "Times New Roman", Times, serif;
+        }
+        .p2 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .p3 {
+            font-family: Cursive, "Courier New", Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#top">top</a>
+
+
+    <a href="#preformatted">Jump to the section "The pre-element defines the preformatted text"</a><br>
+    <a href="#sunshine">Jump to the image of sunshine</a><br>
+    <a href="#tables">Jump to the table exercise section</a><br>
+    
+    <!--A comment-->
+    <!--Use only one h1 heading per page, for the main title or topic-->
+    <!--Otherwise, you can use h2-h6 as many times as you need-->
+
+    <h1 style="font-size:300%;">A Heading! Browers automatically add white space before and after (a margin)</h1>
+
+    
+
+    <!--An tag that defines a hyperlink, uses an href attribute. Attributes are always in the start tag.-->
+    <a href="https://www.w3schools.com"> An absolute link to the W3schools site</a>
+
+    <p style="font-size:160%;">An absolute URL points to a location on the Web, not on your own server.</p>
+    <p>A relative URL links pages located on the same website.</p>
+    <p>Nested HTML elements consist of elements within elements. Everything on this page is nested within the html element.</p>
+    <p>You can make <br>line breaks in the middle of your paragraph. <br>The break element has no closing tag, and <br>you can have as many as you need.</p>
+    <p>The LINE BREAK element is an "empty element" and does not have a closing tag! <br>DO NOT USE AN END TAG WITH THE LINE BREAK ELEMENT!</p>
+    <p>     What happens if I indent the paragraph? Does it show up as an indentation? No, it does not.</p>
+    <p>You cannot change the display by adding extra spaces or extra lines to the HTML code. The browser ignores extra spaces and lines.</p>
+    <hr>
+    <p>You can use a Horizontal Rule to separate sections of your page. It's an empty tag, so no end tag is needed</p>
+    
+    <p>You can make text <b>bold</b>,<i>italicized</i>,<sub>sub</sub>script, <sup>super</sup>script.</p>
+    <p>You can also have <strong>strong</strong>, <em>emphasized</em>, <mark>marked, using highlight</mark>, <small> small</small> text.</p>
+    <p><i>italic (technical text)</i>, <em>emphasized (verbal stress)</em> look nearly identical. A screen reader puts verbal stress on emphasized text.</p>
+    <p>There's also <del>deleted text (strike-through)</del>, and <ins>inserted text</ins></p>
+    <p style="background-color:lightblue;">H<sub>2</sub>O</p>
+    <p>You "wrap" text using these elements</p>
+
+
+    <!--An image tag. The src is the source attribute specifying the image-->
+    <!--Attributes provide additonal information about elements-->
+    <!--href, src, alt, height, width, style, lang are all attributes-->
+    <!--Always quote attribute values-->
+    <p id="sunshine">Sunshine, my study buddy!</p>
+    <img src="Sunshine.jpg" alt="Sunshine!" width="600" height="500">
+    <p>Jump back to <a href="#top">top</a></p>
+    <hr>
+    <p>We can start a new paragraph here.</p>
+
+
+    <!--The CSS text-align property-->
+    <h2 id="preformatted"style="text-align:center;">The pre-element defines preformatted text.</h2>
+    <pre>
+        My Bonnie lies over the ocean.
+
+        My Bonnie lies over the sea.
+
+        My Bonnie lies over the ocean.
+
+        Oh, bring back my Bonnie to me. 
+    </pre>
+    <p>Pre element displays in a fixed-width font, usually Courier.<br>So, the text looks different from the rest of the page. </p>
+    <p>Jump back to <a href="#top">top</a></p>
+
+    <hr>
+    <p style="color:purple; background-color:aqua;">Здравствуйте! What font is this?</p>
+    <hr>
+
+    <p style="color:green; background-color:lightpink;">The Style attribute. Style attribute has CSS proterties.<br>The property (e.g. color) is a CSS property.<br>The value (e.g. green) is a CSS value<br> Also, font-size, text-align are CSS properties.</p>
+
+    <h2>CSS font-family and Cyrillic Character experimentation</h2>
+    <p class="p1">This paragraph is in Times New Roman Font. Здравствуйте!</p>
+    <p class="p2">This paragraph is in Arial Font. Здравствуйте!</p>
+    <p class="p3">This paragraph is in Cursive Font. Здравствуйте!</p>
+    <hr>
+
+    <h2 id="tables">Link to the Tables Exercise</h2>
+
+    <p><a href="Table_Exercise/table.html">Go to the Table Exercise from here.</a></p>
+
+    <p>Jump back to <a href="#top">top</a></p>
+
+    <h2><mark>Quotation and Citation Elements</mark></h2>
+
+    <!--For block quotes you have to add the quotes, if you want them  -->
+
+    <p>Here is a quote by Noam Chomskym'</p>
+    <blockquote>
+        "The most important thing to remember about language is that it is not a tool for communication, but a medium of thought. It is the way we think, not just the way we express our thoughts."
+    </blockquote>
+    <p>Another quote by Noam Chmsky from a lecture: 'Language and Freedom'(1970)</p>
+    <blockquote>
+        Language, in its essential properties and the manner of its use, provides the basic criterion for determining that another organism is a being with a human mind and the human capacity for free thought and self-expression, and with the essential human need for freedom from the external constraints of repressive authority. ... Language is the product of human intelligence that is, for the moment, most accessible to study. A rich tradition held language to be a mirror of mind. To some extent, there is surely truth and useful insight in this idea.
+    </blockquote>
+    <hr>
+
+    <p>A quote from Philip K. Dick, about language</p>
+    <blockquote cite="https://scollurio.medium.com/5-profound-philip-k-dick-quotes-598efe87f349">
+        <it>The basic tool for the manipulation of reality is the manipulation of words. If you can control the meaning of words, you can control the people who must use the words.<it>
+
+    </blockquote>
+
+    <!--A SHORT quotation. NOTICE the quote is wrapped in the paragraph tag. And the browser adds the quotes-->
+    <p> From George Orwell's <it>1984:</it><q>It's a beautiful thing, the destruction of words.</q></p>
+    <p><cite>1984: a novel</cite>, by George Orwell.</p>
+    <!--You can use the q tag for any kind of quote, including written airquotes-->
+
+
+    <p><abbr title="Association for Slavic, East European, & Eurasian Studies">ASEEES</abbr>was established in 1948.</p>
+    <p>Marking up the abbreviation is helpful for browsers, translation systems and search-engines.</p>
+    <a href="https://aseees.org">ASEEES website</a>
+
+    <p>We all love <abbr title="Hyper Text Markup Language">HTML</abbr>!</p>
+
+    <p>Bi-directional override(bd0). It seems like this one would be useful for Right-to-Left language scripts</p>
+    <p>Right-to-Left, and <bdo dir="rtl">Right-to-Left</bdo></p>
+    <!--no semi-colon after this value-->
+    <!--as in Python, you can hide content temporarily in a comment-->
+    <!--<p>A hidden paragraph</p>-->
+    <h4 style="border:5px solid Violet;">Hello World!</h4>
+
+    <p>COLORS: RGB, HEX, and HSL(hue,saturation, lightness)</p>
+
+    <p>Jump back to <a href="#top">top</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
