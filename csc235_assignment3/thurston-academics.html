@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thurston-Academics</title>
+    <!--Adding a link to the external CSS stylesheet, in the head of this page-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!--A relative link back to the index, using a single dot, to go to another file on the same child level-->
+    <!--I could have also used the /index.html to get there via the root-->
+    <a href="./index.html">Back to Home</a>
+    <h1>Education</h1>
+    <hr>
+    
+
+   
+
+
+    <h2>Previous degrees</h2>
+    <h3>Master of Library and Information Science (The University of Texas at Austin)</h3>
+    <p>With a focus on academic research libraries, and private industry libraries</p> 
+
+    <h3>Bachelor of Arts in Linguistics (The University of Texas at Austin)</h3>
+    <p>Cum laude, with special honors in the major; minors in Russian and Spanish</p>
+
+    <!--an absolute link to UT Austin's website-->
+    <a href="https://www.utexas.edu/">The University of Texas at Austin</a>
+    <!--and a photo of Bevo, the school mascot-->
+     <img src="images/bevo.jpg" alt="Bevo">
+    <hr>
+   
+   
+
+
+    <h2>Current Degree</h2>
+    <h3>Bachelor of Science in Computer Science (Southern Connecticut State University)</h3>
+
+   
+
+
+           
+    <!--Creating a table of SCSU courses, current and completed-->
+    <!--Current courses are an ordered list, with links to the catalog-->
+    <!--Completed courses are in an unordered list of at least eight courses-->
+
+    <table>
+        <caption>College Courses</caption>
+        <tr>
+            <th>Current SCSU Courses</th>
+            <th>Completed Courses</th>
+        </tr>
+        <tr>
+            <td>
+                <!--Creating an ordered list of current classes, with links to the catalog-->
+                <ol>
+                    <li><a href="#https://catalog.southernct.edu/undergraduate/courses.html" id="expand-CSC235">CSC235-Web and Database Development</a></li>
+                    <li><a href="#https://catalog.southernct.edu/undergraduate/courses.html" id="expand-MAT150">Mat150-Calculus I</a></li>
+                    <li><a href="#https://catalog.southernct.edu/undergraduate/courses.html" id="expand-MUS105">MUS 105-University Band II</a></li>
+                 </ol>
+                 </td>
+            <!--In the same table row, create an unordered list of eight completed classes-->
+            <td>
+                <ul>
+                    <li>CSC152-CS1: Programming Fundamentals</li>
+                    <li>CSC212-CS2: Data Structures</li>
+                    <li>CSC207-Computer Systems</li>
+                    <li>MAT111-Extended Algebra for Business and Science</li>
+                    <li>MAT122-Precalculus </li>
+                    <li>LIN250-Phonetics</li>
+                    <li>LIN450--Generative Phonology</li>
+                    <li>RUS225-Russian Literature of the 19th century</li>
+                </ul>
+            </td>
+
+            
+
+            
+        
+                
+        </tr>
+    </table>
+
+
+     <!--Relative image address for Otis. Image tags do not have a closing tag! REMEMBER!-->
+    <!--Found this image on the SCSU logo site, and resized it in Paint-->
+    <img src="images/otis.jpg" alt="Otis">
+
+
+    
+
+    
+</body>
+</html>
