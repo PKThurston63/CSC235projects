@@ -1,15 +1,59 @@
+
+/*Using a softer white for the background color of all pages*/
 body {
-    background-color:antiquewhite
+    background-color:antiquewhite;
 }
+
+/*Using reddish colors for headers, instead of black*/
 h1 {
-    color:#A52C4B
+    color:#A52C4B;
 }
 h2 {
-    color:#BE3640
+    color:#BE3640;
 }
 h3 {
-    color:#CC573B
+    color:#CC573B;
 }
+
+/*Almost black text; but it's really a very dark green*/
 p {
-    color:#043026
+    color:#043026;
+}
+/*Giving both tables a strong border, for easier reading*/
+
+table, th, tr, td {
+    border: 1px solid;
+}
+
+/* The class t1 table gets SCSU blue background for the table header*/
+.t1 th {
+    background-color: #0066ff;
+}
+
+/* The class t2 table gets a pink color for the bookstore list*/
+.t2 th {
+    background-color: #FF66CC;
+}
+
+.highlight {
+    background-color: #66FF66;
+    color: black;
+    font-size: 150%;
+}
+/*Changing all kinds of things in this ID, to see what happens*/
+#special {
+    background-color:pink;
+    color: green;
+    padding: 20px;
+    font-size: 125%;
+/*Adding a text-shadow property to this ID*/
+}
+#interests {
+    color:black;
+    font-size:250%;
+    text-shadow: 20px 20px red;
+}
+a:hover {
+    background-color:yellow;
+    font-size:30px;
 }
