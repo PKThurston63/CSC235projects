@@ -1,5 +1,6 @@
 
 /*Using a softer white for the background color of all pages*/
+/*style has a property:value; structure*/
 body {
     background-color:antiquewhite;
 }
@@ -19,22 +20,36 @@ h3 {
 p {
     color:#043026;
 }
-/*Giving both tables a strong border, for easier reading*/
+/*Giving both tables a strong border, for easier reading, and some padding*/
+
 
 table, th, tr, td {
-    border: 1px solid;
+
+    border: 5px solid black;
+    border-collapse: collapse;
+    padding:10px;
+}
+/*Dressing up the font in the Academic table*/
+.t1 caption {
+    font-size:150%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
 }
 
 /* The class t1 table gets SCSU blue background for the table header*/
 .t1 th {
     background-color: #0066ff;
 }
+/*The Center alignment for the text data looks bad. The Left align is much better*/
+.t1 td {
+    text-align:left;
+}
 
 /* The class t2 table gets a pink color for the bookstore list*/
 .t2 th {
     background-color: #FF66CC;
 }
-
+/*Finding a way to hightlight text from the stylesheet, rather than inline*/
 .highlight {
     background-color: #66FF66;
     color: black;
