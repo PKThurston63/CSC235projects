@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Challenge</title>
+</head>
+<body>
+  <h1>DOM Challenge</h1>
+
+  <button class="btn">Click Me</button>
+
+  <ul>
+        <li class="item"><a href="https://www.google.com">Google</a></li>
+        <li class="item">Second</li>
+        <li class="item">Third</li>
+  </ul>
+  <hr>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br><br>
+  <button type="button" id="SwitchBtn" onclick="swapNames()">Swap Names</button>
+
+  <hr>
+  
+  <input type="radio" id="vehicle1" name="vehicle1" value="Bike" checked>
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="radio" id="vehicle2" name="vehicle1" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="radio" id="vehicle3" name="vehicle1" value="Boat">
+  <label for="vehicle3"> I have a boat</label>
+ 
+  <hr>
+
+  <label for="X">X:</label>
+  <input type = "text" id = "X"> </input>
+  <p>
+  <label for="Y">Y:</label>
+  <input type = "text" id = "Y"> </input> 
+  <br/> <br/>
+  <button type= "button" onclick=addNumbers() id="addButton" >Add</button>
+  <p id = "resultParagraph">Sum of X + Y = ?? </p>
+
+  <script>
+    // Tasks: (YOU CANNOT CHANGE ANY OF THE HTML)
+    // 1. Using the console only:
+    //      a. change the background color of the ClickMe button to yellow
+    //      b. change the color of Third to Red.  
+    //              Hint: use getElementsByTagName which returns an array;use index to access the element
+    //      c. change the text "Second" to "2nd"
+    // 2. Write a function to swap the first and last name when Swap Names btn is pressed
+    // 3. Write a function to add the two numbers.  Use parseInt() to convert string to int.
+
+    function swapNames(){
+      let firstname = document.getElementById("fname");
+      let lastname = document.getElementById("lname");
+      console.log(lastname);
+      console.log(firstname);
+
+      let temp= firstname.value;
+      firstname.value=lastname.value;
+      lastname.value = temp;
+    }
+    
+  </script>
+</body>
+</html>
