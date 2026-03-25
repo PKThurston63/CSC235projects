@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thurston-js-experimental</title>
+     <!--a favicon!-->
+    <link rel="icon" type="image/x-icon" href="images/Sunshine.jpg">
+    <!--Adding a link to the external stylesheet, in the head of this page-->
+    <link rel="stylesheet" href="styles.css">
+    <!--JS in the head-->
+    <script>
+    function myFishJokeFunction(){
+        document.getElementById("fish").innerHTML= "Dam!";
+    }
+    </script>
+
+</head>
+<body>
+     <a href="/index.html">Back to Home </a>
+
+     <h2>Fish Joke</h2>
+     <p id="fish">What did the fish say when it ran into a wall?</p>
+
+     <button type="button" onclick="myFishJokeFunction()">Answer</button><br>
+     <hr>
+
+     <!--JS in the body-->
+     <h2>Bass Violin Joke</h2>
+     <p id="bassViolin">What is the difference between a bass violin and a coffin?</p>
+
+     <button type="button" onclick="myBassJokeViolinFunction()">Answer</button>
+
+     <script>
+        function myBassJokeViolinFunction() {
+            document.getElementById("bassViolin").innerHTML = "One of them has a dead person on the inside.";
+
+        }
+     </script><br>
+     <hr>
+
+     <h2>External JavaScript File</h2>
+
+     <p id="sillyJokes">A silly joke, over and over again, on however many pages I want to put it on this site.</p>
+
+     <button type="button" onclick="sillyJokeFunction()">Answer</button>
+
+     <p>This example leads to "sillyJokeFunction.js".</p>
+     <p>I'm storing my JavaScript functions in "myFirstJSscript.js" because:
+        <ol>
+            <li>It separates the HTML code from the JavaScript</li>
+            <li>It makes the JavaScript easier to read and maintain</li>
+            <li>Cached JavaScript files can speed up page loads</li>
+        </ol>
+    </p>
+
+    <!--referencing my JavaScript using the name of the file-->
+    <!--I could use an absolute URL, or a file path-->
+     <script src="myFirstJSscript.js"></script>
+
+     <!--Alert pops up before the page loads. You have to click OK to suppress the message.-->
+     <!--
+     <script>
+        alert("Call your mom");
+     </script>
+     -->
+
+    <!--use for debugging code-->
+     <script>
+        console.log(5 + 6);
+    </script>
+
+    
+
+     <a href="/index.html">Back to Home </a>
+
+</body>
+</html>
